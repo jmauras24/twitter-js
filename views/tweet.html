@@ -1,0 +1,11 @@
+{% extends './layout.html' %}
+{% block content %}
+<div class="media">
+  <div class="media-left media-middle">
+    <img src={{user.picture_url}} class="media-object"  style="width:150px">
+  </div>
+  <div class="jumbotron media-left">
+    {{tweet.content}}
+  </div>
+</div>
+{% endblock %}

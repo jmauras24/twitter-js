@@ -4,11 +4,16 @@
   "description": "a cool tweet app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "PORT=3000 DATABASE_URL=postgress://localhost/twitterdb nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2"
+    "bootstrap": "^4.0.0",
+    "express": "^4.16.2",
+    "glyphicons": "^0.2.0",
+    "nunjucks": "^3.0.1",
+    "pg": "^7.4.1"
   }
 }

@@ -1,0 +1,23 @@
+{% extends './layout.html' %}
+{% block content %}
+<div class="col-md-6">
+    <form class="navbar-form navbar-right" role="search">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Tweets ..." name="srch-term" id="srch-term">
+          <div class="input-group-btn">
+            <button class="btn btn-info" type="submit"><span class="glyphicon glyphicon-search"></span>
+            </button>
+          </div>
+      </div>
+  </form>
+</div>
+  <ul>
+    {% for tweet in tweets %}
+      <li class="list-group-item">
+        <a href='/{{tweet.id}}'>
+          {{ tweet.content }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
